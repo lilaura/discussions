@@ -13,11 +13,15 @@
 		4. If someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line.  Don't use paragraphs. 
 		*/
 		document.querySelector('h1').innerHTML = "Laura Li"; 
-		document.querySelectorAll('#URL').innerHTML = document.URL;
-		document.querySelectorAll('#items').innerHTML = document.querySelectorAll('li').length;
+		document.querySelector('#URL').innerHTML = document.URL;
+		document.querySelector('#items').innerHTML = document.querySelectorAll('li').length;
 		document.querySelector('#time').innerHTML = new Date();
-		
 
+		document.body.style.backgroundColor = "purple";
+		document.body.style.margin = '20px';
+	}
+	function copyFunction (){
+			document.querySelector('#cheer').innerHTML += '<br>Go blue!\n';
 	}
 </script>
 <style>
